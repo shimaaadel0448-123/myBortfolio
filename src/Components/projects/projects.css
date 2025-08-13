@@ -1,0 +1,60 @@
+.skills-section {
+  background: linear-gradient(to right, #501C7D, #4F2062, #4C1B78);
+}
+
+.header {
+  position: relative;
+}
+
+.section {
+  background-color: #F6F7F9;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  margin-top: 10px;
+}
+
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  margin: auto;
+  max-width: 130px;
+  height: 3px;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  margin-top: 10px;
+}
+.skills-section {
+  background: linear-gradient(to right, #501C7D, #4F2062, #4C1B78);
+}
+
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  margin: auto;
+  max-width: 130px;
+  height: 3px;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  margin-top: 10px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}

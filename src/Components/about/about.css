@@ -1,0 +1,129 @@
+.header {
+  position: relative;
+}
+.section
+{
+  background-color: #F6F7F9;
+}
+.header::after {
+  content: '';
+  display: block;
+  margin: auto;
+  max-width: 130px;
+  height: 3px;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  margin-top: 10px;
+}
+  .header {
+    position: relative;
+  }
+  .header::after {
+    content: '';
+    display: block;
+    margin: auto;
+    max-width: 130px;
+    height: 3px;
+    background: linear-gradient(to right, #9732E4, #D22885);
+    margin-top: 10px;
+  }
+  .skill-badge {
+    background-color: #2c2c3e;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+
+  .skill-badge:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-outline-dark {
+    border-color: #9732E4;
+    color: #9732E4;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .btn-outline-dark:hover {
+    background-color: #D22885;
+    border-color: #D22885;
+    color: white;
+  }
+.icon {
+  border-radius: 50%;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.feature {
+  background-color: white;
+  height: 250px;
+  margin: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
+              0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.feature i{
+  color: white;
+  font-size: 30px;
+}
+.feature-card {
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.feature-card .icon {
+  font-size: 1.6rem;
+  background: #f3f3f3;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.feature-card:hover .icon {
+  background: #007bff;
+  color: #fff;
+}
+
+.resume-card {
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border: none;
+}
+.profile-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+.resume-card {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border: none;
+  transition: all 0.3s ease;
+}
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}

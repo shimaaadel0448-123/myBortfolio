@@ -1,0 +1,57 @@
+.hero {
+  background: linear-gradient(to right, #501C7D, #4F2062, #4C1B78);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.custom-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+.custom-btn i, i {
+  font-size: 18px;
+
+}
+
+.arrow-down {
+  font-size: 38px;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.custom-heading {
+  font-size:  72px;
+  width: 100%;
+}
+@media (max-width: 576px) {
+   .custom-heading {
+    font-size:48px;
+  }
+  .buttons a, .buttons button {
+    flex: 1 1 100%;
+    max-width: 300px;
+  }
+}
+
+.custom-btn {
+  width: 100%;
+}
