@@ -25,7 +25,7 @@ export class Projects {
       image: '/ecommerce.PNG',
       technologies: ['angular', 'Bootstrap CSS', 'TypeScript',"rjrx"],
       liveDemo: '#',
-      codeLink: '#'
+      codeLink: 'https://github.com/shimaaadel0448-123/AvatioEcommerce'
     },
     {
       title: 'Portfolio Showcase',
