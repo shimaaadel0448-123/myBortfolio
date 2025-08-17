@@ -17,26 +17,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex ms-auto" role="search">
-            <ul class="navbar-nav mx-2 mb-2 mb-lg-0 " style="font-size: 16px; font-weight: 500;">
-              <li class="nav-item mx-2 ">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <ul class="navbar-nav mx-2 mb-2 mb-lg-0" style="font-size: 16px; font-weight: 500;">
+              <li class="nav-item mx-2">
+                <a class="nav-link" [class.active]="activeSection==='home'" href="#home">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link" [class.active]="activeSection==='about'" href="#about">About</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" [class.active]="activeSection==='projects'" href="#projects">Projects</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                <a class="nav-link" [class.active]="activeSection==='education'" href="#education">Education</a>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Education</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+ <li class="nav-item mx-2">
+                <a class="nav-link" [class.active]="activeSection==='contact'" href="#contact">Contact</a>
               </li>
             </ul>
+
           </div>
 
         </div>

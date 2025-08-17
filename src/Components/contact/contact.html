@@ -1,0 +1,74 @@
+<div class="contact-section py-5">
+  <div class="container text-center text-light">
+    <h2 class="fw-bold mb-3 header" style="font-size: 2.5rem;">Get In Touch</h2>
+    <p class="mx-auto mb-5" style="font-size: 1.3rem; max-width: 700px; color: #C1D5DB;">
+      I'm always interested in new opportunities and collaborations. </p>
+  </div>
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Left Side: Contact Info -->
+      <div class="col-lg-5 text-white">
+        <h3 class="mb-4 fw-bold">Contact Information</h3>
+
+        <div class="card contact-card mb-3">
+          <div class="d-flex align-items-center">
+            <div class="icon-box me-3">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">Email</small>
+              <span>shyma448@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card contact-card mb-3">
+          <div class="d-flex align-items-center">
+            <div class="icon-box me-3">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">Phone</small>
+              <span>+20 1098431544</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Social icons -->
+        <h5 class="fw-bold mb-3">Follow Me</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="col-lg-7">
+        <div class="card shadow-lg border-0 rounded-4 p-4">
+          <h3 class="mb-4 fw-bold">Send a Message</h3>
+          <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control form-control-lg rounded-3" placeholder="Your Name"
+                ngModel required />
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control form-control-lg rounded-3" placeholder="Your Email"
+                ngModel required />
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control form-control-lg rounded-3" rows="4"
+                placeholder="Your Message" ngModel required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gradient w-100 py-2 text-light">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

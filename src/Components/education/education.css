@@ -1,0 +1,120 @@
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.education-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.education-card:hover
+{
+    background: #e7e7e7;
+
+}
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff7ecb, #a658ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.education-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.education-subtitle {
+  color: #6c63ff;
+  font-weight: 500;
+}
+
+.education-date-location {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.header {
+  position: relative;
+}
+
+.section {
+  background-color: #F6F7F9;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #9732E4, #D22885);
+  margin-top: 10px;
+}
+
+/* ✅ تحسين الـ responsive */
+@media (max-width: 768px) {
+  .education-card {
+    padding: 15px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto 15px auto;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education-title {
+    font-size: 1.1rem;
+  }
+
+  .education-subtitle {
+    font-size: 1rem;
+  }
+
+  .education-date-location {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .education-title {
+    font-size: 1rem;
+  }
+}

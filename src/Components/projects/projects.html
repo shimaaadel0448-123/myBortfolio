@@ -1,7 +1,6 @@
-<!-- featured-projects.component.html -->
 <section class="skills-section py-5 text-light">
   <div class="container text-center">
-    <h2 class="fw-bold mb-3 header" style="font-size: 2.5rem;">Featured Projects</h2>
+    <h2 class="fw-bold mb-3 header" style="font-size: 2.5rem;" >Featured Projects</h2>
     <p class="mx-auto mb-5" style="font-size: 1.3rem; max-width: 700px; color: #C1D5DB;">
       Here are some of my recent projects that showcase my skills and experience.
     </p>
@@ -10,31 +9,34 @@
       <!-- Project Card -->
       <div class="col-md-4" *ngFor="let project of projects">
         <div class="card shadow-sm h-100 border-0 rounded-3">
-          <img [src]="project.image" class="card-img-top rounded-top" alt="{{ project.title }}">
-          <div class="card-body text-start">
+          <img [src]="project.image" class="card-img-top rounded-top" alt="{{ project.title }}" loading="lazy">
+          <div class="card-body text-start d-flex flex-column">
             <h5 class="fw-bold">{{ project.title }}</h5>
-            <p>{{ project.description }}</p>
+            <p class="flex-grow-1">{{ project.description }}</p>
 
-            <!-- Tech Tags -->
             <div class="mb-3">
-              <span class="badge me-1 mb-1"
-                    *ngFor="let tech of project.technologies"
-                    style="background-color: #f2e6ff; color: #6a0dad; font-size: 0.85rem;">
+              <span class="badge me-1 mb-1"  *ngFor="let tech of project.technologies"
+                style="background-color: #f2e6ff; color: #6a0dad; font-size: 0.85rem;">
                 {{ tech }}
               </span>
             </div>
 
-            <!-- Buttons -->
-<div class="d-flex gap-2">
-  <a [href]="project.liveDemo" target="_blank" class="btn btn-sm text-light"
-     style="background: linear-gradient(to right, #9732E4, #D22885);">
-    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
-  </a>
-  <a [href]="project.codeLink" target="_blank" class="btn btn-sm btn-outline-secondary">
-    <i class="bi bi-github me-1"></i> Code
-  </a>
-</div>
+            <div class="d-flex gap-2 mt-auto">
+              <a *ngIf="project.liveDemo && project.liveDemo !== '#'"
+                 [href]="project.liveDemo"
+                 target="_blank"
+                 class="btn btn-sm text-light"
+                 style="background: linear-gradient(to right, #9732E4, #D22885);">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+              </a>
 
+              <a
+                 [href]="project.codeLink"
+                 target="_blank"
+                 class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-github me-1"></i> Code
+              </a>
+            </div>
           </div>
         </div>
       </div>
