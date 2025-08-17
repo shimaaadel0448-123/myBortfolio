@@ -20,7 +20,7 @@ export class Projects {
       codeLink: 'https://github.com/shimaaadel0448-123/StudentManagementSystem'
     },
     {
-      title: 'E-commerce React Website',
+      title: 'E-commerce Angualr Website',
       description: 'A fully functional e-commerce website built with angular and Bootstrap CSS. Includes product catalog, shopping cart, and responsive design.',
       image: '/ecommerce.webp',
       technologies: ['angular', 'Bootstrap CSS', 'TypeScript', "rjrx"],
