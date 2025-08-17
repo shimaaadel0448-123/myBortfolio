@@ -48,7 +48,7 @@ export class Projects {
       description: 'A dynamic gaming website showcasing the latest games, trailers, and interactive features. Users can explore game categories, view ratings, and access demos. Built with modern web technologies and fully responsive for all devices.',
       image: '/crafty.webp',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveDemo: '#',
+      liveDemo: 'https://my-bortfolio-kj5d.vercel.app/',
       codeLink: 'https://github.com/shimaaadel0448-123/crafty'
     }
 
