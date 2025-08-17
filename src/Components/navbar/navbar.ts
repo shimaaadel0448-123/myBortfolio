@@ -23,7 +23,6 @@ ngAfterViewInit(): void {
 
     if (mostVisible.id) {
       this.activeSection = mostVisible.id;
-      console.log('Active section:', this.activeSection);
     }
   }, { threshold: [0.3, 0.6, 1] });
 

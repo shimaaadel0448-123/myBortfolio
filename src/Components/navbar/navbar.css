@@ -23,7 +23,7 @@ html {
   background-color: #ECE9F0;
 }
 .navbar-nav .nav-link {
-  color: #333; /* اللون العادي */
+  color: #333;
   transition: all 0.3s ease;
 }
 

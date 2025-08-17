@@ -1,10 +1,8 @@
-/* الخلفية */
 .contact-section {
   background: linear-gradient(135deg, #4F2062, #501C7D, #4C1B78);
   min-height: 100vh;
 }
 
-/* الكروت */
 .contact-card {
   background: #fff;
   border: none;
@@ -12,8 +10,6 @@
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
-/* أيقونة */
 .icon-box {
   width: 50px;
   height: 50px;
